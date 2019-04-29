@@ -43,3 +43,6 @@ npm install --save-dev extract-text-webpack-plugin@2.0.0-beta.4
 
 IMAGES:
 npm install --save-dev image-webpack-loader url-loader file-loader
+
+CODE SPLITTING:
+use System.import
