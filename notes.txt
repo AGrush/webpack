@@ -1,0 +1,45 @@
+Webpack:
+
+MAIN PURPOSE
+------------
+1.Loading order of js files
+2.Total number of JS files.
+
+SECONDARY FEATURES (LOADERS/MODULES/rules (Js libraries)):
+---------------------------------------------------------
+BABEL: Turn new code into ES5 code.
+3 separate modules to install it:
+BABEL-LOADER: Teaches babel how to work with webpack
+BABEL-CORE: Just parses stuff. Knows how to take in code, parse it, and generate some output files. 
+BABEL-PRESENT-ENV: Ruleset for telling babel exactly what pieces of ES2015/6/7 syntax to look for and how to turn it into ES5 code.
+
+CSS: 
+2 modules:
+CSS-LOADER: Teach how to deal with CSS imports
+STYLE-LOADER: Takes CSS imports and adds them to the HTML document
+
+
+
+
+Extra notes:
+  Module systems:
+    CommonJS: require, module.exports
+    AMD: define, require
+    ES2015: export, import
+  Every JS file we need must be imported somewhere
+
+Example1:
+Webpack:
+npm install --save-dev webpack@2.2.0-rc.0
+Babel:
+npm install --save-dev babel-loader babel-core babel-preset-env
+!as of Babel 7: npm install --save-dev @babel/core @babel/preset-env
+
+CSS: injection
+npm install --save-dev style-loader css-loader
+
+CSS: separate files
+npm install --save-dev extract-text-webpack-plugin@2.0.0-beta.4
+
+IMAGES:
+npm install --save-dev image-webpack-loader url-loader file-loader
